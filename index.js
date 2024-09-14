@@ -23,6 +23,6 @@ app.set('views',path.resolve("./views"));
 //routes;
 app.use('/',Route);
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
