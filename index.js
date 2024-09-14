@@ -2,7 +2,7 @@ const express = require('express');
 const path = require("path");
 const data = require('./model/data');
 const Route = require('./routes/route');
-const port = 8080;
+const PORT = process.env.PORT || 10000;
 const app = express();
 //middlewares
 app.use(express.static('public'))
@@ -23,6 +23,6 @@ app.set('views',path.resolve("./views"));
 //routes;
 app.use('/',Route);
 
-app.listen(port,()=>{
-    console.log(`listening at port ${port}`);
-});
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on port ${PORT}`);
+  });
