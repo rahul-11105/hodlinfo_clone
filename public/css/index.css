@@ -30,7 +30,8 @@ body {
 .controls {
     display: flex;
     gap: 20px;
-    margin-right:200px;
+    position: relative;
+    left: 25px;
 }
 
 .btn {
@@ -63,7 +64,22 @@ body {
     border-radius: 8px;
     cursor: pointer;
 }
-
+.count{
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    position: relative;
+    left:18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #3DC6C1;
+    color: #3DC6C1;
+}
+.count p{
+    font-weight:750;
+}
 .telegram{
     display: flex;
     
