@@ -21,7 +21,7 @@ app.set('view engine','ejs');
 app.set('views',path.resolve("./views"));
 
 //routes;
-app.use('/',Route);
+app.use('',Route);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
