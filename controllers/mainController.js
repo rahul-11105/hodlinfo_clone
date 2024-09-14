@@ -58,7 +58,7 @@ const home_page = async (req, res) => {
         res.render('index', { data: processedData });
     } catch (err) {
         console.log(err.message);
-        res.status(500).send('Internal error fetching and storing data');
+        res.status(500).send('');
     }
 };
 
