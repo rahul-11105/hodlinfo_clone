@@ -2,7 +2,7 @@ const express = require('express');
 const path = require("path");
 const data = require('./model/data');
 const Route = require('./routes/route');
-const port = 8000;
+const port = 8080;
 const app = express();
 //middlewares
 app.use(express.static('public'))
