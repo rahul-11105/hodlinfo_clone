@@ -9,7 +9,7 @@ app.use(express.static('public'))
 //DB connection;
 const main = require('./connection/connect');
 
-main("mongodb://127.0.0.1:27017/hodlinfo").then((res)=>{
+main("mongodb+srv://rahullokhande11105:rahul%4011105@cluster0.o9dz7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then((res)=>{
     console.log("mongoDB connected successfully");
 })
 .catch((err)=>{
